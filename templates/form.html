@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs{% endblock %}
+
+{% block content %}
+    <h1>Madlibs</h1>
+    <form action="/madlib" class="madlib-form">
+        <label for="place">place:</label>
+        <input type="text"  placeholder="place" name="place">
+        <br>
+        <label for="place">noun:</label>
+        <input type="text" label="noun" placeholder="noun" name="noun">
+        <br>
+        <label for="place">verb:</label>
+        <input type="text" label="verb" placeholder="verb" name="verb">
+        <br>
+        <label for="place">adjective:</label>
+        <input type="text" label="adjective" placeholder="adjective" name="adjective">
+        <br>
+        <label for="place">plural_noun</label>
+        <input type="text" label="plural_noun" placeholder="plural_noun" name="plural_noun">
+        <br>
+        <button>Submit</button>        
+    </form>
+{% endblock %}
